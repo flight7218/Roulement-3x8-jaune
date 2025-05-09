@@ -1,0 +1,100 @@
+/* Style général */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #FFEB3B; /* Jaune pour le titre */
+}
+
+label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+input[type="number"] {
+  padding: 8px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  width: 100px;
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #FFEB3B;  /* Jaune */
+  color: black;               /* Texte noir pour contraster */
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  display: block;             /* Transforme le bouton en élément bloc */
+  margin: 20px auto;          /* Centrage automatique avec marge */
+}
+
+button:hover {
+  background-color: #FDD835;  /* Jaune plus foncé au survol */
+}
+
+/* Style pour le planning */
+#planning {
+  margin-top: 30px;
+  padding-top: 10px;
+  border-top: 2px solid #FFEB3B;
+}
+
+/* Style pour chaque entrée du planning */
+.planning-entry {
+  display: flex;
+  justify-content: center; /* Centrer horizontalement */
+  align-items: center; /* Centrer verticalement */
+  padding: 8px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #ddd;
+}
+
+.planning-entry:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+.date, .cycle-day {
+  margin: 0 10px; /* Espacement entre la date et le jour du cycle */
+}
+
+/* Rendre les éléments plus petits et plus proches */
+.date {
+  font-weight: bold;
+}
+
+.cycle-day {
+  color: black; /* Changer la couleur des lettres en noir */
+  font-weight: bold;
+  font-size: 1.1rem; /* Légèrement plus grand pour le texte du cycle */
+}
+
+/* Style pour les lignes contenant "R" */
+.gray-background {
+  background-color: #f0f0f0; /* Gris clair */
+}
+
+
+
