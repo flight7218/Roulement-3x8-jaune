@@ -47,8 +47,8 @@ button {
   border: none;
   cursor: pointer;
   border-radius: 5px;
-  display: block;             /* Transforme le bouton en élément bloc */
-  margin: 20px auto;          /* Centrage automatique avec marge */
+  display: block;
+  margin: 20px auto;
 }
 
 button:hover {
@@ -65,11 +65,12 @@ button:hover {
 /* Style pour chaque entrée du planning */
 .planning-entry {
   display: flex;
-  justify-content: center; /* Centrer horizontalement */
-  align-items: center; /* Centrer verticalement */
+  justify-content: center;
+  align-items: center;
   padding: 8px;
   margin-bottom: 5px;
   border-bottom: 1px solid #ddd;
+  background-color: white; /* Fond blanc par défaut pour les autres positions */
 }
 
 .planning-entry:nth-child(odd) {
@@ -77,23 +78,22 @@ button:hover {
 }
 
 .date, .cycle-day {
-  margin: 0 10px; /* Espacement entre la date et le jour du cycle */
+  margin: 0 10px;
 }
 
-/* Rendre les éléments plus petits et plus proches */
 .date {
   font-weight: bold;
 }
 
 .cycle-day {
-  color: black; /* Changer la couleur des lettres en noir */
+  color: black;
   font-weight: bold;
-  font-size: 1.1rem; /* Légèrement plus grand pour le texte du cycle */
+  font-size: 1.1rem;
 }
 
 /* Style pour les lignes contenant "R" */
-.gray-background {
-  background-color: #f0f0f0; /* Gris clair */
+.planning-entry.r-background {
+  background-color: #FFEB3B; /* Jaune pour la position "R" */
 }
 
 
