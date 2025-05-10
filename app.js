@@ -28,9 +28,9 @@ function generateSchedule() {
     const planningEntry = document.createElement("div");
     planningEntry.classList.add("planning-entry");
 
-    // Si la position est 'R', on applique la classe 'gray-background'
+    // Si la position est 'R', on applique la classe 'r-background' pour le jaune
     if (dayOfCycle === 'R') {
-      planningEntry.classList.add("gray-background");
+      planningEntry.classList.add("r-background");
     }
 
     const dateElement = document.createElement("span");
